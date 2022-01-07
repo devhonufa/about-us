@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px 100px 50px;
+    
+
+
+}
+.image{
+
+      width: 500px;
+      height: 350px;
+      /* padding: 80px;*/
+      margin-right: 60px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 30px;
+      
+      
+
+    
+
+}
+.image::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 190%;
+    background-color: #051d85cb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacity: .7; */
+    transform: rotate(125deg);
+    
+}
+.image:hover::after{
+    background-color: rgba(9, 11, 119, 0.671);
+    width: 100%;
+      transform: rotate(180deg);
+      transition: transform 2s ease-in-out;
+}
+.image, img{
+     width: 500px;
+     height: 350px;
+    
+     
+     
+}
+.image:hover img {
+    transform: scale(1.8);
+    transition: transform 3s ease-in-out;
+    
+}
+.about-txt{
+    width: 50%;
+
+
+}
+.about-txt h2{
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.about-txt p{
+     font-size: 19px;
+     margin-bottom: 20px;
+     font-family:sans-serif;
+     line-height: 25px;
+     color: #333232;
+}
+.about-txt button{
+    background: #051d85;
+    width: 150px;
+    height: 40px;
+    color: #ffff;
+    font-size: 19px;
+    font-family:sans-serif;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid #051d85;
+    border-radius: 50px;
+    transition: .6s ease-in-out ;
+    box-shadow: #0a259e88 3px 5px 20px;
+}
+    
+button:hover{
+    background: #ffff;
+    color: #051d85;
+    box-shadow: #051d85 20px 21px;
+    }
+ @media (max-width:768px) {
+
+        .about-us{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 50px;
+        }
+        .image{
+            margin: 0 50px 0 50px;
+            width: 100%;
+            border-radius: 30px;
+            padding: 0;
+
+        }
+         
+         .image,
+         img {
+             width: 440px;
+             height: 300px;}
+
+        
+        .about-txt{
+            margin: 0 50px 0 50px ;
+            padding: 50px;
+            width: 100%;
+            /* text-align: center; */
+        }
+        .about-txt button{
+            width: 130px;
+            height: 40px;
+        }
+    }
+    @media (min-width:769px){
+          .about-us {
+              display: flex;
+              /* flex-direction: column; */
+              /* flex-wrap: wrap; */
+              justify-content: center;
+          }
+    }
